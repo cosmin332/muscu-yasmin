@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF69B4"/>
+      <stop offset="100%" style="stop-color:#C9A0DC"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+  <!-- Heart shape -->
+  <path d="M256 380 C256 380 110 280 110 185 C110 140 145 110 190 120 C215 126 240 145 256 165 C272 145 297 126 322 120 C367 110 402 140 402 185 C402 280 256 380 256 380Z" fill="white" opacity="0.95"/>
+  <!-- Small dumbbell icon inside heart -->
+  <rect x="218" y="238" width="76" height="16" rx="8" fill="#D63384"/>
+  <rect x="206" y="228" width="20" height="36" rx="10" fill="#D63384"/>
+  <rect x="286" y="228" width="20" height="36" rx="10" fill="#D63384"/>
+  <!-- Stars -->
+  <text x="155" y="165" font-size="28" fill="white" opacity="0.7">✿</text>
+  <text x="328" y="165" font-size="28" fill="white" opacity="0.7">✿</text>
+</svg>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#D63384">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Muscu Yasmin">
+  <meta name="description" content="Programme de renforcement musculaire 12 semaines – fait avec amour 💕">
+
+  <title>Mon Programme Muscu 💖</title>
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Apple touch icon (inline SVG encoded) -->
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── App Shell ─────────────────────────────────────── -->
+  <div id="app">
+    <!-- Rendered by app.js -->
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100dvh;gap:12px;color:#D63384">
+      <div style="font-size:3rem">💖</div>
+      <div style="font-family:Georgia,serif;font-size:1.2rem;font-weight:600">Chargement…</div>
+    </div>
+  </div>
+
+  <!-- ── Video Modal ───────────────────────────────────── -->
+  <div id="videoModal" class="modal hidden">
+    <div class="modal-overlay" onclick="closeVideoModal()"></div>
+    <div class="video-modal-sheet">
+      <div class="video-modal-header">
+        <h4 id="videoTitle">Vidéo</h4>
+        <button class="btn-close-modal" onclick="closeVideoModal()">✕</button>
+      </div>
+      <div id="videoContainer"></div>
+    </div>
+  </div>
+
+  <!-- ── Add/Edit Video Modal ──────────────────────────── -->
+  <div id="addVideoModal" class="modal hidden">
+    <div class="modal-overlay" onclick="closeAddVideoModal()"></div>
+    <div class="modal-sheet">
+      <div class="modal-handle"></div>
+      <h3>🎬 Ajouter une vidéo</h3>
+      <p class="modal-subtitle">Colle ici le lien YouTube ou l'URL de ta vidéo d'exercice.</p>
+      <input
+        type="url"
+        id="videoUrlInput"
+        class="input-url"
+        placeholder="https://www.youtube.com/watch?v=..."
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+      >
+      <div class="modal-btn-row">
+        <button class="btn-secondary" onclick="closeAddVideoModal()">Annuler</button>
+        <button class="btn-primary" style="flex:2" onclick="saveVideoUrl()">💾 Enregistrer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Confirm Import Modal ─────────────────────────── -->
+  <div id="confirmImportModal" class="modal hidden">
+    <div class="modal-overlay" onclick="closeConfirmImportModal()"></div>
+    <div class="modal-sheet">
+      <div class="modal-handle"></div>
+      <h3>📥 Confirmer l'import</h3>
+      <p class="modal-subtitle">Ces données remplaceront toutes tes données actuelles. Cette action est irréversible.</p>
+      <div id="importPreview" class="import-preview"></div>
+      <div class="modal-btn-row" style="margin-top:16px">
+        <button class="btn-secondary" onclick="closeConfirmImportModal()">Annuler</button>
+        <button class="btn-primary" style="flex:2" onclick="confirmImport()">✅ Confirmer l'import</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Bottom Navigation ─────────────────────────────── -->
+  <nav class="bottom-nav" role="navigation" aria-label="Navigation principale">
+    <button class="nav-btn active" id="nav-home" onclick="navigateTo('home')">
+      <span class="nav-icon">🏠</span>
+      <span>Accueil</span>
+    </button>
+    <button class="nav-btn" id="nav-program" onclick="navigateTo('program')">
+      <span class="nav-icon">📋</span>
+      <span>Programme</span>
+    </button>
+    <button class="nav-btn" id="nav-progress" onclick="navigateTo('progress')">
+      <span class="nav-icon">📊</span>
+      <span>Progrès</span>
+    </button>
+    <button class="nav-btn" id="nav-rules" onclick="navigateTo('rules')">
+      <span class="nav-icon">💡</span>
+      <span>Règles</span>
+    </button>
+  </nav>
+
+  <!-- ── Scripts ───────────────────────────────────────── -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
