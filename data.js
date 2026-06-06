@@ -38,21 +38,21 @@ const PROGRAM = {
               name: "Le Chat-Chameau",
               description: "À quatre pattes. Alterner lentement entre le dos rond (chat) et le dos plat/creusé (chameau). Rythme très lent, respiration consciente.",
               volume: { type: "sets_reps", sets: 2, reps: "8 allers-retours lents" },
-              videoUrl: null
+              videoUrl: "https://youtu.be/Z-MEX22tJKU?is=Y33FiRorVOrRn4hX"
             },
             {
               id: "p1_pont_fessier",
               name: "Le Pont Fessier",
               description: "Allongée sur le dos, pieds à plat au sol, genoux fléchis. Décoller le bassin en poussant dans les talons. Serrer les fessiers 2 secondes en haut, redescendre frôler le sol sans poser complètement.",
               volume: { type: "sets_reps", sets: 3, reps: 10, rest: "45s" },
-              videoUrl: null
+              videoUrl: "https://youtu.be/mGp4RChHCWo?is=AvJSSzJsoisOKTf5"
             },
             {
               id: "p1_dead_bug",
               name: "Le « Dead Bug » Adapté",
               description: "Allongée sur le dos, genoux levés à 90°. Bas du dos bien plaqué au tapis. Descendre un pied pour effleurer le sol, remonter, puis faire l'autre côté. Ne jamais décoller le bas du dos !",
               volume: { type: "sets_reps", sets: 2, reps: "6 effleurements par jambe" },
-              videoUrl: null
+              videoUrl: "https://youtu.be/6n7ZWnV8snU?is=_tO0sJX3qOZZ1lmG"
             }
           ],
           cooldown: {
@@ -94,21 +94,21 @@ const PROGRAM = {
               name: "Le Box Squat",
               description: "S'asseoir et se lever d'une chaise de manière contrôlée, sans s'aider des mains si possible. Descendre lentement, dos droit, genoux dans l'axe des orteils.",
               volume: { type: "sets_reps", sets: 3, reps: 10, rest: "1 min" },
-              videoUrl: null
+              videoUrl: "https://youtube.com/shorts/A_ojDtdks44?is=2vxcq2T1vN-fYTci"
             },
             {
               id: "p1_tirage_assis",
               name: "Tirage Poitrine Assis (Élastique léger)",
               description: "Assise au sol, jambes tendues, élastique autour des pieds. Tirer les coudes vers l'arrière en serrant les omoplates ensemble. Dos bien droit, sans se pencher en arrière.",
               volume: { type: "sets_reps", sets: 3, reps: 12, rest: "45s" },
-              videoUrl: null
+              videoUrl: "https://youtube.com/shorts/JNmdweFQ67g?is=EcGyX_Ga4JMUdUML"
             },
             {
               id: "p1_gainage_mur",
               name: "Gainage au Mur",
               description: "Avant-bras posés sur le mur à hauteur d'épaules, reculer un peu les pieds. Rentrer le ventre (aspirer le nombril) et serrer les fessiers. Corps en ligne droite parfaite.",
               volume: { type: "sets_duration", sets: 3, duration: "20 à 30 secondes", rest: "45s" },
-              videoUrl: null
+              videoUrl: "https://youtube.com/shorts/kQr5WJCzNbA?is=4H3oOI2ydmGmDn96"
             }
           ],
           cooldown: {
@@ -154,21 +154,21 @@ const PROGRAM = {
               name: "Box Squat Évolué",
               description: "Même exercice qu'en phase 1 sur la chaise, MAIS : effleurer seulement l'assise avec les fesses avant de remonter immédiatement, sans s'asseoir complètement. La tension reste constante dans les jambes.",
               volume: { type: "sets_reps", sets: 3, reps: 12, rest: "1 min" },
-              videoUrl: null
+              videoUrl: "https://youtube.com/shorts/UXEaVTILSHk?is=Tmo4mfTFGbxijgFC"
             },
             {
               id: "p2_tirage_debout",
               name: "Tirage Élastique Debout",
               description: "Élastique coincé dans une poignée de porte fermée à hauteur de taille. Debout, genoux légèrement fléchis, tirer les deux mains vers le nombril en gardant le dos bien droit.",
               volume: { type: "sets_reps", sets: 3, reps: 12, rest: "45s" },
-              videoUrl: null
+              videoUrl: "https://youtu.be/iHk47Ot8WL4?is=i6HUHSLKVZfsCSG3"
             },
             {
               id: "p2_bird_dog",
               name: "Le Bird-Dog (Chien d'arrêt)",
               description: "À quatre pattes, dos bien plat. Tendre le bras droit ET la jambe gauche simultanément, sans cambrer le dos ni tourner le bassin. Tenir 1 seconde, revenir et inverser les côtés. Excellent exercice pour le dos !",
               volume: { type: "sets_reps", sets: 3, reps: "8 répétitions de chaque côté" },
-              videoUrl: null
+              videoUrl: "https://youtube.com/shorts/_1j_HWknGLg?is=hbFW7M8LV7EJt3ZY"
             }
           ],
           cooldown: {
@@ -210,21 +210,21 @@ const PROGRAM = {
               name: "Pont Fessier avec Coussin",
               description: "Même position que le pont classique, mais serrer un coussin entre les genoux pendant tout le mouvement. Cela engage l'intérieur des cuisses en plus des fessiers !",
               volume: { type: "sets_reps", sets: 3, reps: 12, rest: "45s" },
-              videoUrl: null
+              videoUrl: "https://youtube.com/shorts/R6n608M3czU?is=kXPWjLtaqddW8ZZ5"
             },
             {
               id: "p2_elevations_lat",
               name: "Élévations Latérales (Élastique léger)",
               description: "Debout, marcher sur le milieu de l'élastique et tenir les deux extrémités. Monter les bras à l'horizontale en formant un grand « T ». Tonifie les épaules et affine les bras.",
               volume: { type: "sets_reps", sets: 3, reps: 10 },
-              videoUrl: null
+              videoUrl: "https://youtube.com/shorts/svXZTcIMj-I?is=MizG21GlSymxKD4T"
             },
             {
               id: "p2_gainage_genoux",
               name: "Gainage sur les Genoux",
               description: "Au sol, appui sur les coudes et sur les genoux (version facilitée). Aspirer le nombril vers la colonne, serrer les fessiers. Le bas du dos ne doit SURTOUT PAS creuser.",
               volume: { type: "sets_duration", sets: 3, duration: "25 secondes", rest: "45s" },
-              videoUrl: null
+              videoUrl: "https://youtu.be/5-aPnfV-q1I?feature=shared"
             }
           ],
           cooldown: {
@@ -273,28 +273,28 @@ const PROGRAM = {
               name: "① Box Squat",
               description: "S'asseoir et se lever d'une chaise de manière contrôlée.",
               volume: { type: "circuit_reps", reps: 12 },
-              videoUrl: null
+              videoUrl: "https://youtube.com/shorts/A_ojDtdks44?is=p8g4kYbYRqvxzPvl"
             },
             {
               id: "p3_tirage_debout",
               name: "② Tirage Élastique Debout",
               description: "Élastique à la poignée de porte, tirer vers le nombril, dos droit.",
               volume: { type: "circuit_reps", reps: 15 },
-              videoUrl: null
+              videoUrl: "https://youtube.com/shorts/tF_rgNJ6vkM?is=o-iQa9pyVM648fNK"
             },
             {
               id: "p3_pont_coussin",
               name: "③ Pont Fessier avec Coussin",
               description: "Pont fessier en serrant un coussin entre les genoux.",
               volume: { type: "circuit_reps", reps: 15 },
-              videoUrl: null
+              videoUrl: "https://youtube.com/shorts/R6n608M3czU?is=fECdb_iBoerxikZA"
             },
             {
               id: "p3_gainage_genoux",
               name: "④ Gainage sur les Genoux",
               description: "Sur coudes + genoux, nombril aspiré, fessiers serrés.",
               volume: { type: "circuit_duration", duration: "35 secondes" },
-              videoUrl: null
+              videoUrl: "https://youtu.be/5-aPnfV-q1I?is=r0VnVtHJP8hUA3mI"
             }
           ],
           cooldown: {
@@ -345,21 +345,21 @@ const PROGRAM = {
               name: "Pont Fessier Unilatéral",
               description: "Garder un pied au sol, décoller l'autre jambe de quelques centimètres, et pousser le bassin avec UNE SEULE jambe. C'est difficile ! Option si trop dur : rester sur le pont classique à 15 répétitions.",
               volume: { type: "sets_reps", sets: 2, reps: "8 de chaque côté", optional: true, optionalNote: "Si trop difficile : pont classique 15 reps" },
-              videoUrl: null
+              videoUrl: "https://youtu.be/aXw8ubw_pyk?is=bUaCNPRQXPZ53V0i"
             },
             {
               id: "p3_developpe_palette",
               name: "Développé Palette (Élastique)",
               description: "Élastique dans le dos, passé sous les aisselles. Pousser les deux mains vers l'avant pour tendre les bras complètement, puis revenir lentement. Tonifie la poitrine et l'avant des bras.",
               volume: { type: "sets_reps", sets: 3, reps: 12 },
-              videoUrl: null
+              videoUrl: "https://youtu.be/sAshviNLx1M?feature=shared"
             },
             {
               id: "p3_dead_bug_avance",
               name: "Le « Dead Bug » Avancé",
               description: "Même position qu'en Phase 1, mais en tendant la jambe VERS L'AVANT (quasi horizontale, sans toucher le sol !) au lieu de simplement fléchir le genou. Le bas du dos reste scellé au sol à tout moment.",
               volume: { type: "sets_reps", sets: 3, reps: "6 par jambe" },
-              videoUrl: null
+              videoUrl: "https://youtube.com/shorts/bq5TDDgccEE?is=O6yiOhUgPYo6DSp8"
             }
           ],
           cooldown: {
