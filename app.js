@@ -27,6 +27,20 @@ function loadFromStorage() {
   state.completedSessions = JSON.parse(localStorage.getItem('ym_completedSessions') || '{}');
   state.videoUrls         = JSON.parse(localStorage.getItem('ym_videoUrls') || '{}');
   state.checkedExercises  = JSON.parse(localStorage.getItem('ym_checkedExercises') || '{}');
+
+  // Seed default video URLs from data.js into localStorage (never overwrite user edits)
+  let seeded = false;
+  PROGRAM.phases.forEach(phase => {
+    phase.sessions.forEach(session => {
+      session.exercises.forEach(ex => {
+        if (ex.videoUrl && state.videoUrls[ex.id] === undefined) {
+          state.videoUrls[ex.id] = ex.videoUrl;
+          seeded = true;
+        }
+      });
+    });
+  });
+  if (seeded) localStorage.setItem('ym_videoUrls', JSON.stringify(state.videoUrls));
 }
 
 function save() {
@@ -116,7 +130,7 @@ function isYouTube(url) {
 }
 
 function getYouTubeEmbed(url) {
-  const m = url.match(/(?:youtu\.be\/|v=|embed\/)([a-zA-Z0-9_-]{11})/);
+  const m = url.match(/(?:youtu\.be\/|[?&]v=|embed\/|shorts\/)([a-zA-Z0-9_-]{11})/);
   if (m) return `https://www.youtube.com/embed/${m[1]}?rel=0&autoplay=1`;
   return url;
 }
